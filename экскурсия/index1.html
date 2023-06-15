@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Виртуальная экскурсия</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        #container {
+            width: 90%;
+            height: 500px;
+            position: relative;
+            overflow: hidden;
+            margin: 0 auto;
+        }
+        #image {
+            width: 60%;
+            position: absolute;
+            top: 0;
+            left: 20%;
+            transition: transform 0.8s;
+        }
+        .arrow {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 48px;
+            color: #000000;
+            cursor: pointer;
+        }
+        .arrow-left {
+            left: 10px;
+        }
+        .arrow-right {
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <img id="image" src="image1.jpg" alt="Виртуальная экскурсия">
+        <div class="arrow arrow-left">&larr;</div>
+        <div class="arrow arrow-right">&rarr;</div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
